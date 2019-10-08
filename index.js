@@ -32,7 +32,9 @@ class App extends Component {
     keys2.map(key => {
       if(objText1.hasOwnProperty(key)){
         result[key] = objText2[key];
-      };
+      }else{
+        console.log('deleted key', key)
+      }
     })
   };
 
